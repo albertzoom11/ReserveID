@@ -1,4 +1,4 @@
-##Resources
+## Resources
 Github link - https://github.com/SaiVedagiri/ReserveID
 
 iOS Testflight download link - https://bit.ly/reserveid1
@@ -19,7 +19,7 @@ ReserveID is a multi-platform system that can allow customers and store managers
 
 ## How we built it
 
-###App
+##App
 
 We created the app using the Flutter programming language and it allows you to connect to your RFID reader. This app will allow you to schedule your shopping time and reserve your spot on the queue all while being safe at home. It also notifies the user when it is their turn to shop and once the RFID tag is scanned, the shopping timer is displayed. All of the app communications routes through the server to enhance security.
 
