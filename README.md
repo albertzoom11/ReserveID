@@ -19,19 +19,19 @@ ReserveID is a multi-platform system that can allow customers and store managers
 
 ## How we built it
 
-##App
+### App
 
 We created the app using the Flutter programming language and it allows you to connect to your RFID reader. This app will allow you to schedule your shopping time and reserve your spot on the queue all while being safe at home. It also notifies the user when it is their turn to shop and once the RFID tag is scanned, the shopping timer is displayed. All of the app communications routes through the server to enhance security.
 
-###Hardware
+### Hardware
 
 The hardware component of the system is based on an Arduino Mega 2560. A short-range RFID reader is used to scan a user's tag. The ID number is cross referenced with the backend using an ESP8266 WiFi module for wireless communication and unlocks the basket when authenticated. Finally, an ultrasonic sensor is used to track if the basket is empty, which is used in conjunction with app input to alert waiting customers.
 
-###Website
+### Website
 
 We created an HTML/CSS/JavaScript website designated for authenticated managers. It implements the Google Firebase SDK to display real time information of current, queued, and scheduled customers. When a customer checks into the store, the website auto-updates with an event listener and begins an individual timer for regulation purposes. A secure login and signup system is used to provide further security for store managers that are remotely checking in on their store’s status.
 
-###Server
+### Server
 
 The server is the middleman for the entire project. It handles all requests coming in from the arduino, mobile app, and the website. The first process that the server handles is users logging and signing in. From there the server gets a request from the mobile app to update the queue or schedule. This information is then sent to a web socket that the phone also connects to in order to update the status of other customers through their devices. The server then stores the information in the firebase for access by the website.
 
