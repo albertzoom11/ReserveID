@@ -1,4 +1,13 @@
-# ReserveID
+##Resources
+Github link - https://github.com/SaiVedagiri/ReserveID
+
+iOS Testflight download link - https://bit.ly/reserveid1
+
+iOS Testflight alternative download link - https://bit.ly/reserveid2
+
+Website link - https://reserveid.tech (use email "alzou@reserveid.tech" and password "password")
+
+Youtube video link - https://youtu.be/dkJTdKauqqo
 
 ## Inspiration
 
@@ -16,7 +25,7 @@ We created the app using the Flutter programming language and it allows you to c
 
 ###Hardware
 
-The hardware component of the system is based on an Arduino Mega 2560. A short-range RFID reader is used to scan a user's tag. The ID number is cross referenced with the backend using an ESP8266 WiFi module for wireless communication and unlocks the basket when authenticated. Finally, an ultrasonic sensor is used to track if the cart is empty, which is used in conjunction with app input to alert waiting customers.
+The hardware component of the system is based on an Arduino Mega 2560. A short-range RFID reader is used to scan a user's tag. The ID number is cross referenced with the backend using an ESP8266 WiFi module for wireless communication and unlocks the basket when authenticated. Finally, an ultrasonic sensor is used to track if the basket is empty, which is used in conjunction with app input to alert waiting customers.
 
 ###Website
 
@@ -28,7 +37,7 @@ The server is the middleman for the entire project. It handles all requests comi
 
 ## Challenges we ran into
 
-One of the major challenges we ran into was determining how to notify the user as to when they have to enter the store for their turn. We had limited experience with the notifications through the firebase and server so it took a while to get that to work. It took a significant amount of time to finish the website with the live timer through Javascript as well. By far the hardest thing was getting the server to be able to send notifications and interact with the app properly.
+One of the major challenges we ran into was determining how to notify the user as to when they have to enter the store for their turn. We had limited experience with the notifications through the firebase and server so it took a while to get that to work. It took a significant amount of time to finish the website with the live timer through Javascript as well. By far the hardest thing was getting the server to be able to send notifications and interact with the app properly, as well as having multiple users in the stores communicate correctly with the server.
 
 ## Accomplishments that we're proud of
 
